@@ -1,0 +1,41 @@
+header{
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    color: aquamarine;
+}
+
+.navigation_panel{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+}
+
+button{
+    padding: 10px;
+    margin-left: 30px;
+    background-color: black;
+    border: 1px solid white;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+span{
+    margin-left: 15px;
+    color: white
+}
