@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import { User } from "../../dto/user.dto";
+import { User } from "../../dto/user";
 import s from "./Users.module.css";
 
 interface UsersType {
