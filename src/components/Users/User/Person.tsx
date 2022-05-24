@@ -1,6 +1,6 @@
 import React, {FC, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import {getResponse} from "../../../async/getUsers";
+import {userClient} from "../../../async/getUsers";
 
 interface PersonType {
     name: string;
@@ -12,7 +12,7 @@ const Person: FC = () => {
     const {id} = useParams()
     const [person, setPerson] = useState<PersonType | null>(null)
     useEffect(() => {
-        getResponse.getPerson(id, setPerson)
+        userClient.getPerson(id, setPerson)
     }, [id])
     return (
     <>

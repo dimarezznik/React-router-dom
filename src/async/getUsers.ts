@@ -1,6 +1,6 @@
 import {User} from "../dto/user";
 
-class asyncUsers {
+class UserClient {
     getUsers = (users: any) => {
         fetch(`http://jsonplaceholder.typicode.com/users`)
             .then((res) => res.json())
@@ -14,5 +14,4 @@ class asyncUsers {
     }
 }
 
-
-export const getResponse = new asyncUsers()
+export const userClient = new UserClient();

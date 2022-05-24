@@ -8,13 +8,13 @@ import { User } from "./dto/user";
 import Person from "./components/Users/User/Person";
 import ForAuth from "./components/ForAuth/ForAuth";
 import NotFound from "./components/NotFound/NotFound";
-import {getResponse} from "./async/getUsers";
+import {userClient} from "./async/getUsers";
 
 function App() {
   const [users, setUsers] = useState<User[]>([]);
   const [isAuth, setIsAuth] = useState<boolean>(false);
   useEffect(() => {
-    getResponse.getUsers(setUsers)
+    userClient.getUsers(setUsers)
   }, []);
 
   return (
